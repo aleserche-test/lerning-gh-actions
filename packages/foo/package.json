@@ -26,7 +26,10 @@
     "@monstrs/publish-flow": "^0.1.3"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com/"
+    }
   },
   "gitHead": "7f38378a7d11ab09020ccd2448c366725b3ab001"
 }
