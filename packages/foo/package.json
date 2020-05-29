@@ -1,0 +1,23 @@
+{
+  "name": "@aleserche-test/foo",
+  "version": "0.1.0",
+  "author": "Aleksandr Shaikhanov <aleserche-test@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleserche-test/lerning-gh-actions.git"
+  },
+  "scripts": {
+    "clean": "rm -r -f dist",
+    "prepublishOnly": "yarn run build",
+    "prebuild": "yarn clean",
+    "build": "tsc -p tsconfig.json"
+  }
+}
